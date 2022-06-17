@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran Anggota Perpustakaan UNS</title>
+</head>
+<body>
+<h1><center>Formulir Pendaftaran Anggota Perpustakaan</center></h1>
+<h2><center>Universitas Sebelas Maret</center></h2>
+<fieldset>
+<form>
+    <table>
+        <tr>
+            <td>
+                <label for="noidentitas">NIM / NIP</label>
+            </td>
+            <td>
+                <input type="text" id="noidentitas" placeholder="NIM / NIP" size="50">                    
+            </td>
+        </tr>
+        <tr>
+            <td>         
+                <label for="nama">Nama Lengkap</label>
+            </td>
+            <td>
+                <input type="text" id="nama" placeholder="Nama Lengkap" size="50">                 
+            </td>
+        </tr>                  
+        <tr>
+            <td>
+                <label for="jnskelamin">Jenis Kelamin</label>
+            </td>
+            <td>
+            <input type="radio" id="pria" name="Jeniskelamin" ><label for="pria">Pria</label>                          
+            <input type="radio" id="wanita" name="Jeniskelamin" ><label for="wanita">Wanita</label>
+            </td>  
+        </tr>   
+        <tr>
+            <td>
+                <label for="program" >Program</label>
+            </td>
+            <td>
+                <select>
+                    <option value="d3">DIII</option>
+                    <option value="d4">DIV</option>
+                    <option value="s1rgr">S1 Reguler</option>
+                    <option value="s1ets">S1 Ekstensi</option>
+                    <option value="s2">S2</option>
+                    <option value="s3">S3</option>
+                    <option value="dosen">Dosen</option>
+                    <option value="karyawan">Karyawan</option>
+                </select>
+                    <br>
+            </td>
+        </tr>              
+        <tr>
+            <td>
+                <label for="fakultas" >Fakultas</label>
+            </td>
+            <td>
+                <select>
+                    <option value="fisip">Fakultas Ilmu Sosial dan Politik</option>
+                    <option value="feb">Fakultas EKonomi dan Bisnis</option>
+                    <option value="fib">Fakultas Ilmu Budaya</option>
+                    <option value="fmipa">Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
+                    <option value="fp">Fakultas Pertanian</option>
+                    <option value="fkip">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                    <option value="fk">Fakultas Kedokteran</option>
+                    <option value="ft">Fakultas Teknik</option>
+                    <option value="fh">Fakultas Hukum</option>
+                    <option value="fsrd">Fakultas Seni Rupa dan Desain</option>
+                    <option value="fkor">Fakultas Keolahragaan</option>
+                    <option value="pascasarjana">Pascasarjana</option>
+                    <option value="staff">Dosen / Karyawan</option>
+                </select>
+                <br>       
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                <label for="prodi">Program Studi</label>                
+            </td>
+            <td>
+                <input type="text" id="prodi" placeholder="Program Studi" size="50">
+                    <br>
+            </td>
+        </tr>       
+        <tr>
+            <td>
+                <label for="alamat">Alamat Rumah</label>
+            </td>
+            <td>
+                <textarea type="text" id="alamat" rows="6" cols="47" placeholder="Alamat Rumah"></textarea>
+                    <br>  
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="alamat">Alamat Kost</label>
+            </td>
+            <td>
+                <textarea type="text" id="alamat" rows="6" cols="47" placeholder="Alamat Kost"></textarea>
+                    <br> 
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                <label for="nohp">Nomor HP / Whatsapp</label>
+            </td>
+            <td>
+                <input type="text" id="nohp" placeholder="Nomor HP / Whatsapp" size="50">
+                <br>
+            </td>
+        </tr>        
+        <tr>
+            <td>
+                <label for="ttl">Tempat & Tanggal Lahir</label>
+            </td>
+            <td>
+                <input type="text" id="ttl" placeholder="Tempat Lahir" size="30">
+                <input type="date" id="ttl" name="ttl" max="2004-01-01"><br>
+            </td>
+        </tr>          
+        <tr>
+            <td>
+                <label for="namaibu">Nama Ibu</label>
+            </td>
+            <td>
+                <input type="text" id="namaibu" placeholder="Nama Ibu" size="50">
+                    <br>        
+            </td>
+        </tr>              
+        <tr>
+            <td>
+                <button type="submit">Kirim</button>           
+            </td>
+        </tr>        
+<style>
+    body{
+        background-image:url(image/bg1.jpg) ;
+        background-repeat:no-repeat ;
+        background-attachment:fixed ;
+        background-size:100% 100% ;
+    }
+</style>
+    </table>         
+</form>
+</fieldset>
+</body>
+</html>

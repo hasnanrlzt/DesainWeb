@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Penghitung Karakter</h1>
+        <br>
+        <textarea name="ulasan" id="ulasan" cols="60" rows="4" onkeyup="countChart(this)"></textarea>
+        <br>
+        <h3>Jumlah Huruf  : <span id="hitung">0</span></h3>
+        <div id="bar"></div>
+    </center>
+
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+            var max = 50
+            $('#ulasan').keyup(function() { 
+                var jumlah = this.value.length; 
+                if (jumlah >= max + 1) { 
+                    var total   = (jumlah - max);
+                    this.value  = this.value.substring(0, this.value.length-total); 
+                } else {
+                    $('#hitung').text(jumlah);
+                };
+                $(function(){
+                        $('#bar').progressbar({
+                            value : (jumlah * 2)
+                        });
+                });
+            });
+        });   
+
+    </script>
+</body>
+</html>

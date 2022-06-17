@@ -1,0 +1,392 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eedfd5;    
+}
+
+.main{
+    width: 80%;
+    margin: 2rem auto;
+    min-height: 100vh;
+    grid-template-columns: repeat(9, 1fr);
+    display: grid;
+}
+
+.kanan{
+    height: 100%;
+    background-color: #5B3A25;
+    grid-column: span 3;
+    z-index: 1;
+}
+
+.kanan-konten{
+    padding: 2rem 3rem;
+    z-index: 1;
+}
+.frame{
+    position: relative;
+    height: 170px;
+    width: 100%;
+    max-width: 70rem;
+    z-index: 10;    
+    text-align: center;    
+}
+
+.frame img{
+    margin-top: 0%;    
+    border: none;
+    width: 100%;    
+}
+
+.profile{
+    width: 100%;
+    border-bottom: 1px solid #002333;
+}
+
+.image{
+    position: relative;
+    height: 170px;
+    width: 100%;
+    max-width: 50rem;
+    background-color: #E69F34;
+    z-index: 10;    
+    text-align: center;    
+}
+
+.profile img{    
+    border-radius: 50%;
+    border: 8px solid #271910;
+    width: 30%;    
+}
+
+.nama{
+    padding: 2rem 0;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #57861d;
+    position: relative;
+}
+
+.posisi{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #724930;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-judul1{
+    padding-top: 1rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #FFF7EA;
+    text-transform: uppercase;
+}
+
+.main-judul2{
+    padding-top: 5rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #FFF7EA;
+    text-transform: uppercase;
+}
+
+.main-judul3{
+    padding-top: 5rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #FFF7EA;
+    text-transform: uppercase;
+}
+
+.tl-judul-3{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #E69F34;
+    margin-top: 1.3rem;
+}
+
+.kontak-info ul{
+    padding-top: 2rem;
+}
+
+.kontak-info ul li{
+    padding: .4rem 0;
+    align-items: center;
+    color: #FFFCF2;
+    display: flex;
+}
+
+.kontak-info ul li i{
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    color: #FFAF35;
+}
+
+.skills ul{
+    padding-top: 2rem;
+}
+
+.skills ul li{
+    padding: .4rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.desc3{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: #eedfd5;
+    text-align: justify;
+    margin-top: 1.3rem;
+}
+
+.progress{
+    height: 100%;
+    left: 0;
+    border-radius: 12px;
+    background-color: #FFAF35;
+    position: absolute;
+}
+
+.progress-bar{
+    height: .4rem;
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    background-color: #a98a5c;
+}
+
+.good-progress{
+    width: 90%;
+}
+.bad-progress{
+    width: 40%;
+}
+
+.skill-judul{
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sub-judul{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    color: #E4C9B6;
+    text-transform: uppercase;
+}
+
+.sub-desc1{
+    padding: .4rem 0;
+    color: #ccc;
+}
+
+.kiri{
+    height: 100%;
+    grid-column: span 6;
+    background-color: #FFF7EA;
+}
+
+.kiri-main-konten{
+    padding: 2rem 3rem;
+}
+
+.kiri-judul{
+    margin-bottom: 1.4rem;
+    letter-spacing: 1px;
+    color: #FFAF35;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.kiri-judul::after{
+    right: 0;
+    width: 60%;
+    height: .2rem;
+    top: 50%;
+    border-radius: 12px;
+    transform: translateY(-50%);
+    background-color: #271910;
+    content: "";
+    position: absolute;
+}
+
+.desc1{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: #718096;
+    text-align: justify;
+}
+
+.timeline{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.tl-judul{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #5b341c;
+}
+
+.tl-judul-2{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #57861d;
+}
+
+.tl-konten{
+    border-left: 1px solid #271910;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.tl-judul-2::before{
+    left: 0;
+    height: .7rem;
+    width: .7rem;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    background-color: #ad864a;
+}
+
+/*Media Querries*/
+@media screen and (max-width:1200px){
+    .profile img{
+        width: 40%;
+    }
+    .frame{
+        display: none;
+    }
+    .image{
+        height: 30%;
+    }
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}
+
+@media screen and (max-width:1030px){
+    .main-judul3{
+        padding-top: 3rem;
+        margin-top: 0rem
+    }
+    .main-judul2{
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    .main-judul1{
+        padding-top: 0px;
+        margin-top: 0rem;
+    }
+    .image{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:823px){
+    .main-judul{
+        padding-top: 100px;
+    }
+    .kiri-judul::before{
+        width: 40%;
+    }   
+}
+
+@media screen and (max-width:780px){
+    .kanan{
+        grid-column: span 3;
+    }
+    .kiri{
+        grid-column: span 4;
+    }
+    .kiri-judul::after{
+        width: 50%;
+    }
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+          
+}
+
+@media screen and (max-width:700px){
+    .image{
+        height: 40%;
+    }
+    .kiri-judul::after{
+        border-radius: 3px;
+        width: 30%;
+    }
+    .profile img{
+        width: 40%;
+    }   
+}
+
+@media screen and (max-width:681px){
+    .kiri-judul::before{
+        width: 30%;
+        text-align: left;
+    }
+    .kiri-judul::after{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:540px){
+    .nama{
+        font-size: 1.7rem;
+    }
+    .kiri-judul::after{
+        display: none;
+    }
+    .image{
+        width: 100%;        
+        background-color: #FFF7EA;        
+    }
+    .profile img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:390px){
+    .name{
+        font-size: 1.5rem;
+    }
+    .posisi{
+        font-size: 1rem;
+    }
+    .kiri-judul{
+        margin-bottom: 1.2rem;
+    }
+    .desc1{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .tl-judul-2{
+        font-size: 1.1rem;
+    }
+}
